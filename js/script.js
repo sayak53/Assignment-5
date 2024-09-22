@@ -19,3 +19,7 @@ document.getElementById('donation-button').addEventListener('click',function(){
     document.getElementById('history-button').classList.remove('green-background')
     document.getElementById('donation-button').classList.add('green-background')
 })
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location='blog.html'
+})
