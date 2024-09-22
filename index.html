@@ -15,10 +15,24 @@
       font-family: "Lexend", sans-serif;
       font-weight: weight;
       font-style: normal;
-}
+    }
+    #donation-button{
+        border: 1px solid #111111B3;
+    }
+    #history-button{
+        border: 1px solid #111111B3;
+    }
+    /* free-classes */
+    .green-background{
+        background-color: #B4F461;
+        font-weight: bold;
+        border:none !important;
+        border-radius: 8px;
+    }
     </style>
 <body class="lexend">
     <header>
+        <!-- navbar styles -->
         <nav class="bg-[#F9F7F3] h-24 w-full">
             <div class="flex justify-around ">
                 <button class="bg-[#B4F461] h-[39px] w-[80px] font-bold text-sm lg:text-xl lg:h-[49px] lg:w-[110px] mt-7 rounded-lg">Blog</button>
@@ -28,11 +42,27 @@
                 </div>
                 <div class="last flex mt-9">
                     <img class="w-6 h-6 lg:w-8 lg:h-7" src="/assets/coin.png" alt="">
-                    <p class="text-sm text-[#111111B3] lg:text-xl">5500BDT</p>
+                    <p class="text-sm text-[#111111B3] lg:text-xl">5500 BDT</p>
                 </div>
             </div>
         </nav>
     </header>
+
+    <main>
+      <!-- let's create the two buttons first -->
+       <div class="buttons flex justify-center gap-4 mt-16">
+        <button id="donation-button" class="w-[136px] h-[57px] green-background">Donation</button>
+        <button id="history-button" class="w-[136px] h-[57px]">History</button>
+       </div>
+
+       <section class="block" id="donation">
+            <p>hi</p> 
+        </section>
+
+        <section class="hidden" id="history">
+            <p>hello</p>
+        </section>
+    </main>
     <script src="/js/script.js"></script>
 </body>
 </html>
