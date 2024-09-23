@@ -23,3 +23,14 @@ document.getElementById('donation-button').addEventListener('click',function(){
 document.getElementById('blog-btn').addEventListener('click',function(){
     window.location='blog.html'
 })
+
+document.getElementById('first-donate-now').addEventListener('click',function(event){
+    event.preventDefault()
+    const first=document.getElementById('first-donate-input').value
+    const second=document.getElementById('second-donate-input').value
+    const third=document.getElementById('third-donate-input').value
+    
+    const mainBalance1=document.getElementById('main-first')
+    const mainBalance2=document.getElementById('main-second')
+    const mainBalance3=document.getElementById('main-third')
+})
