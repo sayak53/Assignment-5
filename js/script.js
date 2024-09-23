@@ -46,6 +46,8 @@ document.getElementById('first-donate-now').addEventListener('click',function(ev
     p.innerText=`${f} is donated for flood at noakhali`
 
     document.getElementById('transanction-history').appendChild(p)
+
+    alert("succeesfully donated")
 })
 // second-donation logic
 document.getElementById('second-donate-now').addEventListener('click',function(event){
@@ -70,6 +72,7 @@ document.getElementById('second-donate-now').addEventListener('click',function(e
     p.innerText=`${f} is donated for flood at noakhali`
 
     document.getElementById('transanction-history').appendChild(p)
+    alert("succeesfully donated")
 })
 // third-donation logic
 document.getElementById('third-donate-now').addEventListener('click',function(event){
@@ -94,4 +97,5 @@ document.getElementById('third-donate-now').addEventListener('click',function(ev
     p.innerText=`${f} is donated for flood at noakhali`
 
     document.getElementById('transanction-history').appendChild(p)
+    alert("succeesfully donated")
 })
