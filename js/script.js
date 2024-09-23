@@ -69,7 +69,7 @@ document.getElementById('second-donate-now').addEventListener('click',function(e
     document.getElementById('main-balance').innerText=substraction
     
     const p=document.createElement('p')
-    p.innerText=`${f} is donated for flood at noakhali`
+    p.innerText=`${f} is donated for flood at feni`
 
     document.getElementById('transanction-history').appendChild(p)
     alert("succeesfully donated")
@@ -94,7 +94,7 @@ document.getElementById('third-donate-now').addEventListener('click',function(ev
     document.getElementById('main-balance').innerText=substraction
     
     const p=document.createElement('p')
-    p.innerText=`${f} is donated for flood at noakhali`
+    p.innerText=`${f} is donated for injured at quota movement`
 
     document.getElementById('transanction-history').appendChild(p)
     alert("succeesfully donated")
