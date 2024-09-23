@@ -41,6 +41,11 @@ document.getElementById('first-donate-now').addEventListener('click',function(ev
 
     const substraction=mainB-f
     document.getElementById('main-balance').innerText=substraction 
+
+    const p=document.createElement('p')
+    p.innerText=`${f} is donated for flood at noakhali`
+
+    document.getElementById('transanction-history').appendChild(p)
 })
 // second-donation logic
 document.getElementById('second-donate-now').addEventListener('click',function(event){
@@ -61,6 +66,10 @@ document.getElementById('second-donate-now').addEventListener('click',function(e
     const substraction=mainB-f
     document.getElementById('main-balance').innerText=substraction
     
+    const p=document.createElement('p')
+    p.innerText=`${f} is donated for flood at noakhali`
+
+    document.getElementById('transanction-history').appendChild(p)
 })
 // third-donation logic
 document.getElementById('third-donate-now').addEventListener('click',function(event){
@@ -81,4 +90,8 @@ document.getElementById('third-donate-now').addEventListener('click',function(ev
     const substraction=mainB-f
     document.getElementById('main-balance').innerText=substraction
     
+    const p=document.createElement('p')
+    p.innerText=`${f} is donated for flood at noakhali`
+
+    document.getElementById('transanction-history').appendChild(p)
 })
