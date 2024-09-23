@@ -23,14 +23,63 @@ document.getElementById('donation-button').addEventListener('click',function(){
 document.getElementById('blog-btn').addEventListener('click',function(){
     window.location='blog.html'
 })
-
+// first-donation logic
 document.getElementById('first-donate-now').addEventListener('click',function(event){
     event.preventDefault()
     const first=document.getElementById('first-donate-input').value
-    const second=document.getElementById('second-donate-input').value
-    const third=document.getElementById('third-donate-input').value
+    const f=parseInt(first)
+
+    const mainBalance1=document.getElementById('main-first').innerText
+    const main=parseInt(mainBalance1)
+
+    const addition=f+main
+    document.getElementById('main-first').innerText=addition
+
+    const mainB=document.getElementById('main-balance').innerText
+    const integerMain=parseInt(mainB)
+    console.log(integerMain)
+
+    const substraction=mainB-f
+    document.getElementById('main-balance').innerText=substraction
     
-    const mainBalance1=document.getElementById('main-first')
-    const mainBalance2=document.getElementById('main-second')
-    const mainBalance3=document.getElementById('main-third')
+})
+// second-donation logic
+document.getElementById('second-donate-now').addEventListener('click',function(event){
+    event.preventDefault()
+    const first=document.getElementById('second-donate-input').value
+    const f=parseInt(first)
+
+    const mainBalance1=document.getElementById('main-second').innerText
+    const main=parseInt(mainBalance1)
+
+    const addition=f+main
+    document.getElementById('main-second').innerText=addition
+
+    const mainB=document.getElementById('main-balance').innerText
+    const integerMain=parseInt(mainB)
+    console.log(integerMain)
+
+    const substraction=mainB-f
+    document.getElementById('main-balance').innerText=substraction
+    
+})
+// third-donation logic
+document.getElementById('third-donate-now').addEventListener('click',function(event){
+    event.preventDefault()
+    const first=document.getElementById('third-donate-input').value
+    const f=parseInt(first)
+
+    const mainBalance1=document.getElementById('main-third').innerText
+    const main=parseInt(mainBalance1)
+
+    const addition=f+main
+    document.getElementById('main-third').innerText=addition
+
+    const mainB=document.getElementById('main-balance').innerText
+    const integerMain=parseInt(mainB)
+    console.log(integerMain)
+
+    const substraction=mainB-f
+    document.getElementById('main-balance').innerText=substraction
+    
 })

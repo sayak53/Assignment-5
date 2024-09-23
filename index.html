@@ -33,7 +33,7 @@
 <body class="lexend">
     <header>
         <!-- navbar styles -->
-        <nav class="bg-[#F9F7F3] h-24 w-full">
+        <nav class="bg-[#F9F7F3] h-24 w-full sticky">
             <div class="flex justify-around ">
                 <button id="blog-btn" class="bg-[#B4F461] h-[39px] w-[80px] font-bold text-sm lg:text-xl lg:h-[49px] lg:w-[110px] mt-7 rounded-lg">Blog</button>
                 <div class="middle flex mt-7">
@@ -42,21 +42,25 @@
                 </div>
                 <div class="last flex mt-9">
                     <img class="w-6 h-6 lg:w-8 lg:h-7" src="/assets/coin.png" alt="">
-                    <p class="text-sm text-[#111111B3] lg:text-xl">5500 BDT</p>
+                    <p id="main-balance" class="text-sm text-[#111111B3] lg:text-xl">5500</p>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
+        
       <!-- let's create the two buttons first -->
+
        <div class="buttons flex justify-center gap-4 mt-16">
         <button id="donation-button" class="w-[136px] h-[57px] green-background">Donation</button>
         <button id="history-button" class="w-[136px] h-[57px]">History</button>
        </div>
 
        <section class="block" id="donation">
+
         <!-- first item styles -->
+
             <div class="first-item flex-col mt-16 space-y-4 p-5 lg:flex lg:flex-row lg:justify-center lg:gap-7">
                 <div class="img-div">
                     <img src="/assets/noakhali.png" alt="">
@@ -73,7 +77,9 @@
                    <button id="first-donate-now" class="bg-[#B4F461] w-full rounded-[4px] h-[50px] font-bold lg:w-[522px]">Donate Now</button>
                 </div>
             </div>
+
             <!-- second item styles -->
+
             <div class="second-item flex-col mt-16 space-y-4 p-5 lg:flex lg:flex-row lg:justify-center lg:gap-7">
                 <div class="img-div">
                     <img src="/assets/feni.png" alt="">
@@ -90,7 +96,9 @@
                    <button id="second-donate-now" class="bg-[#B4F461] w-full rounded-[4px] h-[50px] font-bold lg:w-[522px]">Donate Now</button>
                 </div>
             </div>
+
             <!-- third item styles -->
+
             <div class="third-item flex-col mt-16 space-y-4 p-5 lg:flex lg:flex-row lg:justify-center lg:gap-7">
                 <div class="img-div">
                     <img src="/assets/quota-protest.png" alt="">
