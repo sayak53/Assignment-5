@@ -40,8 +40,7 @@ document.getElementById('first-donate-now').addEventListener('click',function(ev
     console.log(integerMain)
 
     const substraction=mainB-f
-    document.getElementById('main-balance').innerText=substraction
-    
+    document.getElementById('main-balance').innerText=substraction 
 })
 // second-donation logic
 document.getElementById('second-donate-now').addEventListener('click',function(event){
