@@ -32,6 +32,7 @@ document.getElementById('first-donate-now').addEventListener('click',function(ev
     const mainBalance1=document.getElementById('main-first').innerText
     const main=parseInt(mainBalance1)
 
+   if(isNaN(first)==false){
     const addition=f+main
     document.getElementById('main-first').innerText=addition
 
@@ -48,6 +49,10 @@ document.getElementById('first-donate-now').addEventListener('click',function(ev
     document.getElementById('transanction-history').appendChild(p)
 
     alert("succeesfully donated")
+   }
+   else{
+    alert("Please Enter a Valid Amount")
+   }
 })
 // second-donation logic
 document.getElementById('second-donate-now').addEventListener('click',function(event){
@@ -58,7 +63,8 @@ document.getElementById('second-donate-now').addEventListener('click',function(e
     const mainBalance1=document.getElementById('main-second').innerText
     const main=parseInt(mainBalance1)
 
-    const addition=f+main
+    if(isNaN(first)==false){
+        const addition=f+main
     document.getElementById('main-second').innerText=addition
 
     const mainB=document.getElementById('main-balance').innerText
@@ -73,6 +79,10 @@ document.getElementById('second-donate-now').addEventListener('click',function(e
 
     document.getElementById('transanction-history').appendChild(p)
     alert("succeesfully donated")
+    }
+    else{
+        alert("Please Enter a Valid Amount")
+    }
 })
 // third-donation logic
 document.getElementById('third-donate-now').addEventListener('click',function(event){
@@ -83,19 +93,24 @@ document.getElementById('third-donate-now').addEventListener('click',function(ev
     const mainBalance1=document.getElementById('main-third').innerText
     const main=parseInt(mainBalance1)
 
-    const addition=f+main
-    document.getElementById('main-third').innerText=addition
-
-    const mainB=document.getElementById('main-balance').innerText
-    const integerMain=parseInt(mainB)
-    console.log(integerMain)
-
-    const substraction=mainB-f
-    document.getElementById('main-balance').innerText=substraction
+    if(isNaN(first)==false){
+        const addition=f+main
+        document.getElementById('main-third').innerText=addition
     
-    const p=document.createElement('p')
-    p.innerText=`${f} is donated for injured at quota movement`
-
-    document.getElementById('transanction-history').appendChild(p)
-    alert("succeesfully donated")
+        const mainB=document.getElementById('main-balance').innerText
+        const integerMain=parseInt(mainB)
+        console.log(integerMain)
+    
+        const substraction=mainB-f
+        document.getElementById('main-balance').innerText=substraction
+        
+        const p=document.createElement('p')
+        p.innerText=`${f} is donated for injured at quota movement`
+    
+        document.getElementById('transanction-history').appendChild(p)
+        alert("succeesfully donated")
+    }
+    else{
+        alert("Please Enter a Valid Amount")
+    }
 })
